@@ -3,64 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Website</title>
+    <title>Web Agency</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <nav>
-            <h1>My Website</h1>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Esigned</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Welcome to My Website</h2>
-        <p>Your one-stop destination for everything awesome!</p>
-        <button onclick="scrollToSection('about')">Learn More</button>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm Sayan Dutta, a passionate developer. I create beautiful websites, apps, and plugins that solve real-world problems.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>A cool description of your project goes here.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>A cool description of your project goes here.</p>
-            </div>
-            <div class="project-card">
-                <h3>Project 3</h3>
-                <p>A cool description of your project goes here.</p>
+        <div class="hero-content">
+            <h1>Welcome to</h1>
+            <h2>WEB AGENCY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <button class="cta">Contact us</button>
+            <div class="carousel-dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>WHAT WE DO</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus, lacus non tincidunt pulvinar.</p>
     </section>
-
-    <footer>
-        <p>© 2024 Sayan Dutta. All rights reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
